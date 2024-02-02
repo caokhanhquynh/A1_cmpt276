@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/quizApp.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="js/quizLogic.js" defer></script>
+</head>
+<body onload = "offClass()">
+    <header>
+        <p class = "name"></p>
+        <h1>Interactive Quiz</h1>
+        <p class="score">Score:</p><p id="score">0</p>
+    </header>
+    <main class = "container">
+        <section class = "welcome">
+            <h2>Welcome to Interactive Quiz</h2>
+            <p>Please enter your name:</p>
+            <input name="uname" type="text" id="fname">
+            <input onclick="welcomeToReady()" type="submit" value="SUBMIT">
+        </section>
+        <section class = "ready"">
+            <p id = "READY" onclick="start()">Press to Start</p>
+        </section>
+        <section class = "questions">
+            <section class = "question">
+                <p class = "q">What is the basic building block of all matter?</p>
+                <button class = "right">a. The basic building block of all matter is the atom.</button>
+                <button class = "wrong">b. Idk</button>
+                <button class = "wrong">c. Idk</button>
+                <button class = "wrong">d. Idk</button>
+                <!-- <button class = "continue">Continue</button> -->
+                <p class = "result"></p>
+            </section>
+            <section class = "question">
+                <p class = "q">What is the basic building block of all matter?</p>
+                <button class = "wrong">a. Idk</button>
+                <button class = "wrong">b. Idk</button>
+                <button class = "right">c. The basic building block of all matter is the atom.</button>
+                <button class = "wrong">d. Idk</button>
+                <!-- <button class = "continue">Continue</button> -->
+                <p class = "result"></p>
+            </section>
+            <section class = "question">
+                <p class = "q">What is the basic building block of all matter?</p>
+                <button class = "wrong">a. Idk</button>
+                <button class = "wrong">b. Idk</button>
+                <button class = "wrong">c. Idk</button>
+                <button class = "right">d. The basic building block of all matter is the atom.</button>
+                <!-- <button class = "continue">Continue</button> -->
+                <p class = "result"></p>
+            </section>
+        </section>
+        <section class = "summary">
+            <h2>Your Total Score is:</h2>
+            <p id="finalScore"></p>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
