@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/quizApp1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="js/quizLogic1.js" defer></script>
+</head>
+<body>
+    <header>
+        <p class = "name"></p>
+        <h1>Interactive Quiz</h1>
+    </header>
+    <main class = "container">
+        <section class = "welcome">
+            <h2>Welcome to Interactive Quiz</h2>
+            <p>Please enter your name:</p>
+            <input name="uname" type="text" id="fname">
+            <input onclick="welcomeToReady()" type="submit" value="SUBMIT">
+        </section>
+        <section class = "ready"">
+            <p id = "READY" onclick="start()">Press to Start</p>
+        </section>
+        <section class = "questions">
+            <section class = "question">
+                <p class = "q">What is the powerhouse of the cell?</p>
+                <button class = "answer">a. Mitochondria</button>
+                <button class = "answer">b. Nucleus</button>
+                <button class = "answer">c. Endoplasmic reticulum</button>
+                <button class = "answer">d. Golgi apparatus</button>
+                <p></p>
+                <button class = "continue" onclick="showNextQuestion()">Continue</button>
+                <p class = "result"></p>
+            </section>
+            <section class = "question">
+                <p class = "q">Which gas is responsible for the greenhouse effect on Earth?</p>
+                <button class = "answer">a. Oxygen</button>
+                <button class = "answer">b. Nitrogen</button>
+                <button class = "answer">c. Carbon dioxide</button>
+                <button class = "answer">d. Hydrogen</button>
+                <p></p>
+                <button class = "previous" onclick="showPreviousQuestion()">Previous</button>
+                <button class = "continue" onclick="showNextQuestion()">Continue</button>
+                <p class = "result"></p>
+            </section>
+            <section class = "question">
+                <p class = "q">What is the chemical symbol for water?</p>
+                <button class = "answer">a. O2</button>
+                <button class = "answer">b. CO2</button>
+                <button class = "answer">c. N2</button>
+                <button class = "answer">d. H2O</button>
+                <p></p>
+                <button class = "previous" onclick="showPreviousQuestion()">Previous</button>
+                <button class = "continue" onclick="showNextQuestion()">Continue</button>
+                <p class = "result"></p>
+            </section>
+            <section class = "question">
+                <p class = "q">Which planet is known as the "Red Planet"?</p>
+                <button class = "answer">a. Venus</button>
+                <button class = "answer">b. Mars</button>
+                <button class = "answer">c. Jupiter</button>
+                <button class = "answer">d. Saturn</button>
+                <p></p>
+                <button class = "previous" onclick="showPreviousQuestion()">Previous</button>
+                <button class = "continue" onclick="showNextQuestion()">Continue</button>
+                <p class = "result"></p>
+            </section>
+            <section class = "question">
+                <p class = "q">What is the smallest bone in the human body?</p>
+                <button class = "answer">a. Femur</button>
+                <button class = "answer">b. Tibia</button>
+                <button class = "answer">c. Stapes</button>
+                <button class = "answer">d. Radius</button>
+                <p></p>
+                <button class = "previous" onclick="showPreviousQuestion()">Previous</button>
+                <button class = "continue" onclick="showNextQuestion()">Continue</button>
+                <p class = "result"></p>
+            </section>
+            <section class = "question">
+                <p class = "q">What is the chemical symbol for gold?</p>
+                <button class = "answer">a. Au</button>
+                <button class = "answer">b. Ag</button>
+                <button class = "answer">c. Fe</button>
+                <button class = "answer">d. Cu</button>
+                <p></p>
+                <button class = "previous" onclick="showPreviousQuestion()">Previous</button>
+                <button class = "continue" onclick="showNextQuestion()">Continue</button>
+                <p class = "result"></p>
+            </section>
+            <section class = "question">
+                <p class = "q">Which gas do plants absorb from the atmosphere during photosynthesis?</p>
+                <button class = "answer">a. Oxygen</button>
+                <button class = "answer">b. Nitrogen</button>
+                <button class = "answer">c. Carbon dioxide</button>
+                <button class = "answer">d. Hydrogen</button>
+                <p></p>
+                <button class = "previous" onclick="showPreviousQuestion()">Previous</button>
+                <button class = "continue" onclick="showNextQuestion()">Continue</button>
+                <p class = "result"></p>
+            </section>
+            <section class = "question">
+                <p class = "q">What is the primary function of the red blood cells?</p>
+                <button class = "answer">a. Transporting oxygen</button>
+                <button class = "answer">b. Fighting infections</button>
+                <button class = "answer">c. Clotting blood</button>
+                <button class = "answer">d. Carrying nutrients</button>
+                <p></p>
+                <button class = "previous" onclick="showPreviousQuestion()">Previous</button>
+                <button class = "continue" onclick="showNextQuestion()">Continue</button>
+                <p class = "result"></p>
+            </section>
+            <section class = "question">
+                <p class = "q">What is the Earth's largest ocean?</p>
+                <button class = "answer">a. Atlantic Ocean</button>
+                <button class = "answer">b. Indian Ocean</button>
+                <button class = "answer">c. Southern Ocean</button>
+                <button class = "answer">d. Pacific Ocean</button>
+                <p></p>
+                <button class = "previous" onclick="showPreviousQuestion()">Previous</button>
+                <button class = "continue" onclick="showNextQuestion()">Continue</button>
+                <p class = "result"></p>
+            </section>
+            <section class = "question">
+                <p class = "q">Which element has the chemical symbol 'Fe'?</p>
+                <button class = "answer">a. Iron</button>
+                <button class = "answer">b. Gold</button>
+                <button class = "answer">c. Silver</button>
+                <button class = "answer">d. Copper</button>
+                <p></p>
+                <button class = "previous" onclick="showPreviousQuestion()">Previous</button>
+                <button class = "continue" onclick="showNextQuestion()">Continue</button>
+                <p class = "result"></p>
+            </section>
+            <section class = "question">
+                <p class = "q">What is the main function of the pancreas in the human body?</p>
+                <button class = "answer">a. Digestion</button>
+                <button class = "answer">b. Blood circulation</button>
+                <button class = "answer">c. Hormone regulation</button>
+                <button class = "answer">d. Respiration</button>
+                <p></p>
+                <button class = "previous" onclick="showPreviousQuestion()">Previous</button>
+                <button class = "continue" onclick="showNextQuestion()">Continue</button>
+            </section>
+            <section class = "question">
+                <p class = "q">In which part of the cell does photosynthesis occur?</p>
+                <button class = "answer">a. Nucleus</button>
+                <button class = "answer">b. Mitochondria</button>
+                <button class = "answer">c. Chloroplast</button>
+                <button class = "answer">d. Endoplasmic reticulum</button>
+                <p></p>
+                <button class = "previous" onclick="showPreviousQuestion()">Previous</button>
+                <button class = "continue" id = "last_continue" onclick="showNextQuestion()">Submit</button>
+            </section>
+        </section>
+        <section class = "summary">
+            <h2>Your Total Score is:</h2>
+            <p id="finalScore"></p>
+            <p class = "review_question"></p>
+            <p class = "previous_answer"></p>
+            <p class = "correct_answer"></p>
+            <p class = "review_question"></p>
+            <p class = "previous_answer"></p>
+            <p class = "correct_answer"></p>
+            <p class = "review_question"></p>
+            <p class = "previous_answer"></p>
+            <p class = "correct_answer"></p>
+            <p class = "review_question"></p>
+            <p class = "previous_answer"></p>
+            <p class = "correct_answer"></p>
+            <p class = "review_question"></p>
+            <p class = "previous_answer"></p>
+            <p class = "correct_answer"></p>
+            <p class = "review_question"></p>
+            <p class = "previous_answer"></p>
+            <p class = "correct_answer"></p>
+            <p class = "review_question"></p>
+            <p class = "previous_answer"></p>
+            <p class = "correct_answer"></p>
+            <p class = "review_question"></p>
+            <p class = "previous_answer"></p>
+            <p class = "correct_answer"></p>
+            <p class = "review_question"></p>
+            <p class = "previous_answer"></p>
+            <p class = "correct_answer"></p>
+            <p class = "review_question"></p>
+            <p class = "previous_answer"></p>
+            <p class = "correct_answer"></p>
+            <p class = "review_question"></p>
+            <p class = "previous_answer"></p>
+            <p class = "correct_answer"></p>
+            <p class = "review_question"></p>
+            <p class = "previous_answer"></p>
+            <p class = "correct_answer"></p>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

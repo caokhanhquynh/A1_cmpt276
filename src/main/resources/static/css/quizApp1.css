@@ -1,0 +1,122 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+.welcome {
+    position: relative;
+    top: 20px;
+}
+
+.name {
+    position: fixed;
+    top: 15px;
+    left: 10px;
+}
+
+.score {
+    color: #fff;
+    position: fixed;
+    top: 15px;
+    right: 50px;
+}
+
+#score {
+    color: #fff;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
+
+.question{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#READY{
+    background-color: #4e4323;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    top: 30px;
+}
+
+button{
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: #655151;
+    font-style: italic;
+    background-color: white;
+}
+
+.question {
+    position: relative;
+    top: 20px;
+}
+
+.q {
+    font-size: x-large;
+}
+
+.summary {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+#finalScore{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+}
+.result{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+}
+.continue, 
+.previous{
+    width: 48%; /* Adjust button width as needed, leaving some space between buttons */
+    float: left; /* Float the buttons to the left */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+.continue{
+    background-color: blue;
+    color: white;
+    float: right;
+}
+#last_continue {
+    background-color: red;
+}
+.previous{
+    position: relative;
+    background-color: grey;
+    color: white;
+}
+.review_question {
+    font-size: larger;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}

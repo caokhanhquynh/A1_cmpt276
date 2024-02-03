@@ -7,6 +7,8 @@ function offClass() {
     section3.style.display = "none";
 }
 
+const answer_list = [];
+
 function welcomeToReady() {
     var section1 = document.getElementsByClassName("welcome")[0];
     var section2 = document.getElementsByClassName("ready")[0];
@@ -74,7 +76,7 @@ for (var i = 0; i < rightElements.length; i++) {
         //         showNextQuestion();
         //     });
         // }
-        setTimeout(showNextQuestion,1000);
+        // setTimeout(showNextQuestion,1000);
     });
 }
 var wrongElements = document.getElementsByClassName("wrong");
@@ -90,7 +92,7 @@ for (var i = 0; i < wrongElements.length; i++) {
         //         showNextQuestion();
         //     });
         // }
-        setTimeout(showNextQuestion,1000);
+        // setTimeout(showNextQuestion,1000);
     });
 }
 
