@@ -79,5 +79,12 @@ function finalScore() {
             document.getElementsByClassName("correct_answer")[i].innerHTML = "Correct answer: " + correct_answer_list[i];
         }
     }
-    document.getElementById('finalScore').innerHTML = score;
+    document.getElementById('finalScore').innerHTML = score + "/120";
 }
+
+var button = document.querySelector('input[value="SUBMIT"]')
+button.addEventListener('click', function(evt){
+    evt.preventDefault()
+    var text = document.getElementById('fname').value
+    document.getElementsByClassName('name')[0].innerHTML = text
+})
